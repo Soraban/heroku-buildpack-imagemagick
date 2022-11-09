@@ -67,8 +67,8 @@ if [ ! -f $CACHE_FILE ]; then
   git clone https://github.com/strukturag/libheif.git | indent
   cd libheif
 
-  echo "-----> Reset libheif to desired tag/commit (${LIBHEIF_VERSION:-v1.3.2})"
-  git reset --hard "${LIBHEIF_VERSION:-v1.3.2}" | indent
+  echo "-----> Reset libheif to desired tag/commit (${LIBHEIF_VERSION:-v1.12.0})"
+  git reset --hard "${LIBHEIF_VERSION:-v1.12.0}" | indent
 
   echo "-----> Building libheif"
   ./autogen.sh | indent
