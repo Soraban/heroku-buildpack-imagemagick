@@ -52,8 +52,8 @@ if [ ! -f $CACHE_FILE ]; then
   git clone https://github.com/strukturag/libde265.git | indent
   cd libde265
 
-  echo "-----> Reset libde265 to desired tag/commit (${LIBDE265_VERSION:-v1.0.3})"
-  git reset --hard "${LIBDE265_VERSION:-v1.0.3}" | indent
+  echo "-----> Reset libde265 to desired tag/commit (${LIBDE265_VERSION:-v1.0.8})"
+  git reset --hard "${LIBDE265_VERSION:-v1.0.8}" | indent
 
   echo "-----> Building libde265"
   ./autogen.sh | indent
@@ -82,8 +82,8 @@ if [ ! -f $CACHE_FILE ]; then
   git clone https://github.com/ImageMagick/ImageMagick.git | indent
   cd ImageMagick
 
-  echo "-----> Reset to desired tag/commit (${IMAGEMAGICK_VERSION:-7.0.8-27)}"
-  git reset --hard "${IMAGEMAGICK_VERSION:-7.0.8-27}" | indent
+  echo "-----> Reset to desired tag/commit (${IMAGEMAGICK_VERSION:-7.1.0.43)}"
+  git reset --hard "${IMAGEMAGICK_VERSION:-7.1.0.43}" | indent
 
   echo "-----> Set environment"
   export PKG_CONFIG_PATH="$INSTALL_DIR/lib/pkgconfig"
