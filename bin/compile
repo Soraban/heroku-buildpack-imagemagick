@@ -82,8 +82,8 @@ if [ ! -f $CACHE_FILE ]; then
   git clone https://github.com/ImageMagick/ImageMagick.git | indent
   cd ImageMagick
 
-  echo "-----> Reset to desired tag/commit (${IMAGEMAGICK_VERSION:-7.1.0.43)}"
-  git reset --hard "${IMAGEMAGICK_VERSION:-7.1.0.43}" | indent
+  echo "-----> Reset to desired tag/commit (${IMAGEMAGICK_VERSION:-7.1.0-43)}"
+  git reset --hard "${IMAGEMAGICK_VERSION:-7.1.0-43}" | indent
 
   echo "-----> Set environment"
   export PKG_CONFIG_PATH="$INSTALL_DIR/lib/pkgconfig"
