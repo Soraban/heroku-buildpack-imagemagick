@@ -81,7 +81,7 @@ if [ ! -f $CACHE_FILE ]; then
   export CPPFLAGS="-I$INSTALL_DIR/include/libheif"
 
   echo "-----> Building ImageMagick"
-  ./configure --enable-shared=no --enable-static=yes --with-zero-configuration --with-heic=yes --prefix=$INSTALL_DIR | indent
+  ./configure --with-heic=yes --prefix=$INSTALL_DIR | indent
   make | indent
   make install | indent
   cd ..
